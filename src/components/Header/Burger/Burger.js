@@ -18,7 +18,7 @@ const Burger = ({click}) => {
 		burgerRef.current.classList.toggle('open')
 	}
 	return (
-		<StyledBurger className=" mt-0.5">
+		<StyledBurger className=" mt-0.5 xl:hidden">
 			<div id="nav-icon1" onClick={handleClick} ref={burgerRef}>
 				<span />
 				<span />

@@ -11,8 +11,9 @@ const StyledIcons = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
+		white-space: nowrap;
         @media (min-width: 768px) {
-            font-size: 17px;
+            font-size: 16px;
         }
 	}
 `

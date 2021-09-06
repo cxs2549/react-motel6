@@ -11,9 +11,9 @@ const StyledMenu = styled.div`
 	overflow-y: scroll;
 	background-color: #fff;
 	transition: right 500ms;
+	max-width: 70%;
     @media (min-width: 768px) {
         max-width: 40%;
-        border-left: 1px solid lightgray;
     }
 `
 const Menu = ({ open }) => {
@@ -24,7 +24,7 @@ const Menu = ({ open }) => {
 	const featLinks = [ 'military discount', 'AARP benefits', 'senior rate' ]
 	const salesLinks = [ 'corporate plus', 'group reservations' ]
 	return (
-		<StyledMenu open={open} className="absolute p-4 text-black">
+		<StyledMenu open={open} className="absolute p-4 text-black shadow xl:hidden">
 			<div className="flex flex-col justify-between capitalize">
 				<RegLink title="find reservation" />
 				<Accordion title="Language (EN)" links={langLinks} open={isOpen1} click={() => setIsOpen1(!isOpen1)} />
