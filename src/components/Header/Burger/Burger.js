@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import './burger.css'
 
 const StyledBurger = styled.div`
-	transform: translate(12px, -2px);
+	transform: translate(8px, -2px);
 	@media (min-width: 768px) {
 		transform: translate(16px, -2px);
 	}

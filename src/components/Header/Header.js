@@ -11,15 +11,22 @@ import Headroom from 'react-headroom'
 const StyledHeader = styled.header`
 	color: white;
 	padding: .25rem 0;
-	border-bottom: 1px solid lightgray;
+	position: relative;
+	z-index: 10;
+	/* border-bottom: 1px solid lightgray; */
 	background-color: var(--brandBlue);
 `
 const Header = () => {
 	const [ isOpen, setIsOpen ] = useState(false)
 
+	const handleClose = () => {
+		setIsOpen(false)
+		document.getElementById('nav-icon1').classList.remove('open')
+	}
+
 	const menuRef = useRef()
 
-	useOnClickOutside(menuRef, () => setIsOpen(false))
+	useOnClickOutside(menuRef, handleClose)
 
 	const links = [
 		'find reservation',

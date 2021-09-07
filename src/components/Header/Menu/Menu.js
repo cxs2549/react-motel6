@@ -12,6 +12,7 @@ const StyledMenu = styled.div`
 	background-color: #fff;
 	transition: right 500ms;
 	max-width: 70%;
+	z-index: 10;
     @media (min-width: 768px) {
         max-width: 40%;
     }
