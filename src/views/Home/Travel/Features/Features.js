@@ -5,6 +5,9 @@ import aarp from "../../../../assets/aarp.jpg";
 const StyledFeatures = styled.div`
  h1 {
    font-size: 1.25rem;
+   @media (min-width: 1280px) {
+     font-size: 2rem;
+   }
  }
   #features {
     display: grid;
@@ -33,14 +36,14 @@ const Features = () => {
     { title: "AARP Members", desc: "AARP Members save even more", img: aarp },
   ];
   return (
-    <StyledFeatures className="p-4  flex flex-col relative justify-end pb-6">
+    <StyledFeatures className="p-4  flex flex-col relative xl:rounded justify-end pb-6  xl:shadow">
       <h1 className=" whitespace-nowrap inline-block capitalize  font-bold mb-4 ">
         features and deals
       </h1>
 
-      <div  className="flex flex-col gap-2 w-full xl:border rounded justify-center py-2 xl:py-0">
+      <div  className="flex flex-col gap-3 w-full   justify-center py-2 xl:py-2">
         {feats.map((feat, i) => (
-          <div id="features" key={i} className="flex">
+          <div id="features" key={i} className="flex cursor-pointer hover:bg-gray-100">
             <img
               src={feat.img}
               className="w-24 h-24 object-top object-cover rounded"

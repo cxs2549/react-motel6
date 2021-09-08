@@ -50,7 +50,7 @@ const Menu = ({ open, close }) => {
       open={open}
       className="fixed p-4 text-black shadow xl:hidden"
     >
-      <div id="close" onClick={close} className="flex justify-end ">
+      <div id="close" onClick={close} className="flex justify-end cursor-pointer">
         <GrClose fill="red" />
       </div>
       <div id="list" className="flex flex-col justify-between capitalize mt-4">

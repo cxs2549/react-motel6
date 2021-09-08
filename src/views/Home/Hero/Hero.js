@@ -57,7 +57,7 @@ const Hero = () => {
               When you pay for 2 months <br className="md:hidden" /> of wireless
               service.
             </p>
-            <button className="px-4 py-2 mt-4 bg-brandBlue rounded text-white font-medium relative z-10 shadow xl:text-lg">
+            <button className="px-4 py-2 mt-4 bg-brandBlue rounded text-white font-medium relative z-10 shadow xl:text-lg filter hover:opacity-90">
               Join Now
             </button>
           </div>

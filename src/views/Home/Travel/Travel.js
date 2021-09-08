@@ -20,9 +20,9 @@ const StyledTravel = styled.div`
 `
 const Travel = () => {
 	return (
-		<StyledTravel className="xl:py-3 relative ">
-			<div id="bigWrap" className="grid md:grid-cols-2 mx-auto max-w-6xl">
-                <div id="wrapper" className="  md:shadow md:rounded bg-white md:order-2">
+		<StyledTravel className="md:py-3 relative ">
+			<div id="bigWrap" className="grid md:grid-cols-2 mx-auto max-w-6xl gap-4">
+                <div id="wrapper" className="  xl:shadow md:rounded bg-white md:order-2">
                     <div id="travel-header" className="py-2 xl:rounded-t px-8 capitalize flex">
                         travel information:{' '}
                         <a href="/" className="underline ml-2">
@@ -64,7 +64,7 @@ const Travel = () => {
                                 <i className="fa fa-chevron-down" aria-hidden="true" />
                             </div>
                         </div>
-                        <button className="bg-green-600 text-white font-bold capitalize mt-4 py-2 rounded">
+                        <button className="bg-green-600 text-white font-bold capitalize mt-4 py-2 rounded hover:opacity-90">
                             continue
                         </button>
                     </div>

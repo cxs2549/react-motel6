@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import logo from '../../assets/logo-reverse.png'
 import Wrap from '../utilities/Wrap/Wrap'
-import { CgFacebook, CgInstagram, CgYoutube, CgTwitter } from 'react-icons/cg'
+import { CgFacebook, CgInstagram, CgYoutube } from 'react-icons/cg'
 import { FaGooglePlay, FaApple } from 'react-icons/fa'
+import {AiOutlineTwitter} from 'react-icons/ai'
 const StyledFooter = styled.footer`
 	background-color: var(--brandBlue);
 	color: white;
@@ -71,7 +72,7 @@ const Footer = () => {
 				>
 					<CgFacebook />
 					<CgInstagram />
-					<CgTwitter />
+					<AiOutlineTwitter />
 					<CgYoutube />
 				</div>
 
