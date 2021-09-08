@@ -3,9 +3,9 @@ import grand from "../../../../assets/grand.jpg";
 import hero from "../../../../assets/hero.jpg";
 import aarp from "../../../../assets/aarp.jpg";
 const StyledFeatures = styled.div`
-  span {
-    font-size: 1rem;
-  }
+ h1 {
+   font-size: 1.25rem;
+ }
   #features {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -33,14 +33,14 @@ const Features = () => {
     { title: "AARP Members", desc: "AARP Members save even more", img: aarp },
   ];
   return (
-    <StyledFeatures className="p-4 py-6 flex relative justify-end">
-      <span className=" whitespace-nowrap transform -rotate-90 inline-block capitalize absolute -left-12 top-24 font-bold">
+    <StyledFeatures className="p-4  flex flex-col relative justify-end pb-6">
+      <h1 className=" whitespace-nowrap inline-block capitalize  font-bold mb-4 ">
         features and deals
-      </span>
+      </h1>
 
       <div  className="flex flex-col gap-2 w-full xl:border rounded justify-center py-2 xl:py-0">
         {feats.map((feat, i) => (
-          <div id="features" key={i} className="flex  ml-12">
+          <div id="features" key={i} className="flex">
             <img
               src={feat.img}
               className="w-24 h-24 object-top object-cover rounded"

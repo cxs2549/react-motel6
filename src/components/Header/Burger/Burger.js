@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import styled from 'styled-components'
 import './burger.css'
 
@@ -7,19 +6,12 @@ const StyledBurger = styled.div`
 	@media (min-width: 768px) {
 		transform: translate(16px, -2px);
 	}
-	#menu {
-		top: 60px;
-	}
 `
 const Burger = ({click}) => {
-	const burgerRef = useRef()
-	const handleClick = () => {
-		click()
-		burgerRef.current.classList.toggle('open')
-	}
+	
 	return (
-		<StyledBurger className=" mt-0.5 xl:hidden">
-			<div id="nav-icon1" onClick={handleClick} ref={burgerRef}>
+		<StyledBurger onClick={click} className=" mt-0.5 xl:hidden">
+			<div id="nav-icon1">
 				<span />
 				<span />
 				<span />

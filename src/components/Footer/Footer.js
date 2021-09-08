@@ -76,7 +76,7 @@ const Footer = () => {
 				</div>
 
 				<p className="text-xs  py-4">
-					&copy; 2021 Phobia Webworks for G6 Hospitality LLC. <br /> All rights reserved.
+					&copy; 2021 CxS for G6 Hospitality LLC. <br /> All rights reserved.
 				</p>
 			</Wrap>
 		</StyledFooter>

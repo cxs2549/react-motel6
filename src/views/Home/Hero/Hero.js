@@ -3,7 +3,7 @@ import hero from "../../../assets/hero.jpg";
 
 const StyledHero = styled.div`
   height: 64vh;
-  width: 100vw;
+  max-width: 100vw;
   background-image: url(${hero});
   background-position: center center;
   background-position: -60px 0;
@@ -11,6 +11,7 @@ const StyledHero = styled.div`
   background-size: cover;
   color: white;
   position: relative;
+  overflow-x: hidden;
 	@media (min-width: 640px) {
 		background-position: 0 0;
 	}
@@ -48,7 +49,7 @@ const Hero = () => {
       <StyledHero className="py-4">
         <div className="mx-auto w-full max-w-6xl relative">
           <div className="flex flex-col items-start justify-center absolute left-0 top-0 xl:top-4 px-4">
-            <h1 className="text-4xl xl:text-5xl font-bold -mt-2 md:max-w-2xl">
+            <h1 className="text-4xl xl:text-5xl font-bold  md:max-w-2xl">
               New my<span className="text-brandRed">6</span> Members get a Free
               Samsung Galaxy Smartphone
             </h1>
